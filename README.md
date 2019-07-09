@@ -154,8 +154,7 @@ public function initialize()
 
 ### Model Setup
 #### Acting as a requester
-- Add the requester behavior to `GroupsTable` and `UsersTable`
- - Add `$this->addBehavior('Acl.Acl', ['type' => 'requester']);` to the `initialize` function in the files `src/Model/Table/UsersTable.php` and `src/Model/Table/GroupsTable.php`
+- Add the requester behavior to `GroupsTable` and `UsersTable` by adding `$this->addBehavior('Acl.Acl', ['type' => 'requester']);` to the `initialize` function in the files `src/Model/Table/UsersTable.php` and `src/Model/Table/GroupsTable.php`
 
 
 #### Implement `parentNode` function in `Group` entity
